@@ -1,0 +1,7 @@
+<p>products works!</p>
+<div>
+    <div class="product" *ngFor="let product of products;let i = index">
+        <a (click)="goToDetails(product.id)"> <span>{{product.title}}</span>
+            <span><img src='{{product.thumbnail}}' /></span></a>
+    </div>
+</div>
